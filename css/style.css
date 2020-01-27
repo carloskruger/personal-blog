@@ -1,0 +1,148 @@
+@import "headings-style.css"; /* this hanbdles the headings */
+@import "header-style.css"; /* this styles the header      */
+@import "footer-style.css"; /* this styles the footer       */
+
+
+body {
+background-color: rgb(230, 213, 182);
+font-family: 'Montserrat', sans-serif;
+}
+button a {
+    text-decoration: none;
+    font-family: montserrat;
+    color: white;
+    font-style: bold;
+}
+
+body button {
+    background-color: green;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    background-color: white;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .description {
+    padding: 2px 16px;
+  }
+
+
+  .container{
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 500px 500px 500px;
+    grid-template-areas:
+    "abt"
+    "lodge"
+    "sightsee"
+    "fd"
+}
+
+nav ul {
+
+    display: flex;
+  
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    list-style-type: none;
+
+}
+
+
+  /* Large Screens */
+  @media (min-width: 600px) {
+
+    nav ul {
+
+        display: flex;
+      
+        flex-direction: row;
+    
+        justify-content: center;
+    
+        list-style-type: none;
+    
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: yellow;
+        background-color: orangered;
+        padding: 15px;
+        font-size: 1.2em;
+        border: 1rem;
+        border-color: blue;
+       
+    }
+.container{
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 450px 450px 450px 450px;
+    grid-template-areas:
+    
+    "aboutpic abt"
+    "lodgepic lodge"
+    "sightseepic sightsee"
+    "foodpic fd"
+}
+
+
+
+#first-card {
+    display: visible;
+    grid-area: aboutpic;
+}
+
+
+
+#second-card {
+    grid-area: lodgepic;
+}
+
+#third-card {
+    grid-area: sightseepic;
+}
+
+#fourth-card {
+    grid-area: foodpic;
+}
+  }
+
+
+
+
+.about {
+    
+    grid-area: abt;
+}
+
+.lodging {
+
+    grid-area: lodge;
+}
+
+
+.sightseeing {
+
+    grid-area: sightsee;
+}
+
+
+.food {
+    grid-area: fd;
+}

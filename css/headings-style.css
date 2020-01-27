@@ -1,0 +1,41 @@
+h1 {
+    color: red;
+    font-size: 57px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Monoton';
+
+}
+
+h2 {
+
+    color: #8a3e3e;
+    font-size: 22px;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h3 {
+
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    font-style: bold;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+h4 {
+
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    font-style: bold;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
