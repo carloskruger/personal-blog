@@ -7,6 +7,7 @@ body {
 background-color: rgb(230, 213, 182);
 font-family: 'Montserrat', sans-serif;
 }
+
 button a {
     text-decoration: none;
     font-family: montserrat;
@@ -26,56 +27,49 @@ body button {
     transition: 0.3s;
     width: 80%;
     background-color: white;
-  }
-  
-  .card:hover {
+  } 
+
+.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-  
-  .description {
+
+.description {
     padding: 2px 16px;
   }
 
-
-  .container{
-
+.container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 500px 500px 500px 500px;
+  /*  grid-template-rows: 500px 500px 500px 500px 500px; */
+    grid-auto-rows: minmax(100px, auto);
     grid-template-areas:
     "abt"
     "lodge"
     "sightsee"
     "fd"
+    "aboutpic"
+    "lodgepic"
+    "sightpic"
+    "foodpic"
+    "ftr"
 }
 
 nav ul {
-
     display: flex;
-  
     flex-direction: column;
     flex-wrap: wrap;
-
     justify-content: center;
-
     list-style-type: none;
-
 }
 
-
   /* Large Screens */
-  @media (min-width: 600px) {
+  @media (min-width: 746px) {
 
     nav ul {
-
         display: flex;
-      
         flex-direction: row;
-    
         justify-content: center;
-    
         list-style-type: none;
-    
     }
     
     nav a {
@@ -88,27 +82,23 @@ nav ul {
         border-color: blue;
        
     }
-.container{
 
+.container{
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 450px 450px 450px 450px;
+    grid-template-rows: 450px 450px 450px 450px 450px;
     grid-template-areas:
-    
     "aboutpic abt"
     "lodgepic lodge"
     "sightseepic sightsee"
     "foodpic fd"
+    "ftr ftr"
 }
-
-
 
 #first-card {
     display: visible;
     grid-area: aboutpic;
 }
-
-
 
 #second-card {
     grid-area: lodgepic;
@@ -122,9 +112,6 @@ nav ul {
     grid-area: foodpic;
 }
   }
-
-
-
 
 .about {
     
@@ -145,4 +132,8 @@ nav ul {
 
 .food {
     grid-area: fd;
+}
+
+footer {
+    grid-area: ftr;
 }
